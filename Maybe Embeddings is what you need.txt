@@ -1,0 +1,161 @@
+
+title: Maybe Embeddings Are What You Need
+subheading: A beginner’s guide to understanding embeddings in Machine Learning and how they bridge the gap in NLP.
+author: Fabio Matricardi
+
+
+I could start by telling you the obvious:
+
+Embeddings are a powerful technique in machine learning that allows us to represent data in a lower-dimensional space while preserving its semantic meaning. This approach has revolutionized various fields, including natural language processing (NLP), computer vision, and more.
+
+But this doesn’t explain it at all. So, what exactly are embeddings? Do we really need them?
+
+Let’s explore here what embeddings are and how they are evolving. I will use the info-graphics from the Haystack Blog page.
+
+What Are Embeddings?
+
+Embeddings are the 5 senses of deep-learning models. I cannot find a different way to explain it.
+
+Machine Learning and Artificial Intelligence are neural networks that mimic the human brain, but they work like any computer does: they work with numbers, or better they work with zeros and ones.
+
+How can we pass information from our beautiful and colorful and diverse World into this binary and limited computer world?
+
+I present you Embeddings. 
+
+The word, obviously, is related to “embed” which is defined by the dictionary to mean: “fix (an object) firmly and deeply in a surrounding mass”. 
+
+The information, audio, video, and language are translated into numbers, specifically into vectors. Let’s also simplify a little the idea of a vector. An embedding is a vector (let’s say, a list) of floating point numbers. The distance between two lists measures how much they are related to each other. Small distances suggest they are highly related and large distances suggest they are lowly related.
+
+Images, audio, and text that are more related to each other are in the same “space”.
+Why Do We Have Lists (Vectors) and Not Just a Simple Number?
+
+In the same way that we have colors with gradients, surface properties, opacity, and so on, a word has a semantic meaning that can change depending on the context. But it does also have fixed relations with similar words or objects. 
+
+If I take the word “dog” as an example, it may help to make the point clearer. We have different breeds with their own characteristics, but we can, in the end, say if they are dogs and not cats. So, since only a number is too simple to express the relations and meaning of a word, we need more numbers. In Machine Learning, they are called dimensions. The bigger the dimensions, the bigger the characteristics we can capture about DOGS.
+
+What Are Embeddings in Machine Learning?
+
+Embeddings convert real-world objects into complex mathematical representations that capture inherent properties and relationships (characteristics) between real-world data. 
+
+In Machine Learning, this entire process is automated, with AI systems self-creating embeddings (translations of the data received from the human world) during training and using them as needed to complete new tasks.
+
+They are at the beginning of any AI creation! So they are indeed a powerful tool in Machine Learning that bridge the gap between real-world objects and the world of computations. To recap, the Embeddings are used for:
+
+Conversion to numerical representation: Embeddings take real-world objects, like text, images, or even actions, and transform them into numerical vectors. This allows machines to understand and manipulate these objects more easily.
+Capturing inherent properties and relationships: These numerical representations aren’t random; they aim to capture the essential characteristics and relationships between the original objects. For instance, similar words in a text would have embeddings close to each other in the vector space.
+Automated learning: The creation of embeddings is often automated using Machine Learning techniques, particularly deep learning. These techniques analyze large datasets of the objects and learn the underlying patterns and relationships.
+Reusability for various tasks: Once learned, embeddings can be reused across different Machine Learning tasks. This saves time and resources, as the model doesn’t need to re-learn the representation from scratch for each new task.
+How to read a Huge amount of data faster and cheaper — embeddings by lexica.art
+Why Are Embeddings Important?
+The easy answer is that the can Reduce data dimensionality and solve the main problem: the need for speed
+
+While the capabilities of AI are constantly expanding, scaling automation can encounter limitations in terms of speed and cost. This is where the recent surge in interest in Embeddings comes in.
+
+The primary context for these technologies is the need for speed, particularly when dealing with large amounts of text data. This is especially relevant for large language models of the GPT series, closed or open sourced, where processing vast quantities of text efficiently is crucial.
+
+Embeddings are the Engineering tools to solve the struggle to handle large-scale text processing quickly and cost-effectively. 
+
+The initial part of any LLM training is the more critical: the neural network is created starting from a HUGE amount of data with a massive number of features (let’s call them details).
+
+Data scientists use embeddings to represent high-dimensional data in a low-dimensional space. 
+
+In the world of AI, data with lots of features (details) is called high-dimensional. For example, an image is high-dimensional because each pixel has a color value, which is like a feature. The more details there are, the more challenging it is for computers to analyze and learn from the data. This is where embeddings come in.
+
+Think of embeddings as summaries. They take high-dimensional data and condense it into a smaller, more manageable form, like picking out the key points from a long long text. This makes it easier and faster for AI models to process and understand the information. Just like summarizing a book saves you time and effort, embeddings help AI models work more efficiently.
+
+Reducing the number of features while still capturing important patterns and relationships is the job of the Embeddings. They allow AI models to learn and make predictions faster and with less computing power. This is crucial for large and complex datasets, like processing millions of images or understanding vast amounts of text.
+
+image from frontiersin.org
+What Are Vectors — in AI Terms?
+
+We talked about the vectors, we called them “details”, right? 
+
+But the term “vector,” in computation, refers to an ordered sequence of numbers — similar to a list or an array. By embedding a word or a longer text passage as a vector, it becomes manageable by computers, which can then, for example, compute how similar two pieces of text are to each other.
+
+The number of values in a text embedding — known as its “dimension” — depends on the embedding technique (the process of producing the vector), as well as how much information you want it to convey. 
+
+In semantic search, for example, the vectors used to represent documents often have 768 dimensions.
+
+Word-level Vector Similarity
+
+Let’s try to visualize the concept. Imagine that we have a collection of nouns that we’ve turned into word vectors, using a dense embedding technique. If we simplify these vectors with hundreds of dimensions to ones with only two dimensions we can plot them on a similarly designed two-dimensional grid.
+
+Looking closely at the diagram, we can see how similar words form little clusters: there’s a group of vehicles in the lower left corner, and the upper right one seems to be about drinks. Note also how, within the clusters themselves, there are degrees of similarity: coffee and tea, both being hot drinks, are closer to each other than to lemonade.
+
+Sentence-level Vector Similarity
+
+Text vectorization techniques are able to embed not only words as vectors, but even longer passages. Let’s say we have a corpus (that is, a collection of related texts) of dialogue scenes that we’ve turned into dense vectors. Just like with our noun vectors earlier, we can now reduce these high-dimensional vectors to two-dimensional ones, and plot them on a two-dimensional grid.
+
+By plotting the dense vectors produced by our embedding algorithm on a two-dimensional grid, we can see how this technology is able to emulate our own linguistic intuition — the lines “I’ll have a cup of good, hot, black coffee” and “One, tea please!” are, while certainly not equivalent, much more similar to each other than to any of the other lines of dialogue.
+
+Embeddings Are Evolving
+
+Embedding models have been used for long time, primarily for the purpose of Training other LLMs of ML models.
+
+The introduction of Retrieval Augmented Generation and consequently of Vector Store Databases shed a new light on these models. 
+
+They have have few common issues:
+
+They have a context length limit, exactly like the Large Language Models.
+They usually are good at one language only (English).
+You need high dimensions vectors for good results.
+They are usually trained on specific task (audio, video text).
+
+In the past few weeks, many of those limits were broken! Here, I will briefly present them; in a following article, we will deep dive into them.
+
+twitter announcement
+Limit 1: Context Length from 512 to 8000 Tokens
+
+Jina-ColBERT is a ColBERT-style model but based on JinaBERT so it can support both 8k context length, fast and accurate retrieval.
+
+JinaBERT is a BERT architecture that supports the symmetric bidirectional variant of ALiBi to allow longer sequence length. The Jina-ColBERT model is trained on MSMARCO passage ranking dataset, following a very similar training procedure with ColBERTv2. The only difference is that we use jina-bert-v2-base-en as the backbone instead of bert-base-uncased.
+
+You can check out more on the Hugging Face page:
+
+jinaai/jina-colbert-v1-en · Hugging Face
+
+
+We're on a journey to advance and democratize artificial intelligence through open source and open science.
+huggingface.co
+Limit 2: Multilingual E5 Text Embeddings: A Technical Report
+
+The gurus at infloat discovered a method to train multilanguage embeddings starting from the English version. So basically if you trained a good English Embeddings model, you can now easilty train NOT FROM SCRATCH a Multi-language version of it
+
+Here’s the abstract from the paper:
+
+This technical report presents the training methodology and evaluation results of the open-source multilingual E5 text embedding models, released in mid-2023. Three embedding models of different sizes (small / base / large) are provided, offering a balance between the inference efficiency and embedding quality. The training procedure adheres to the English E5 model recipe, involving contrastive pre-training on 1 billion multilingual text pairs, followed by fine-tuning on a combination of labeled datasets. Additionally, we introduce a new instruction-tuned embedding model, whose performance is on par with state-of-the-art, English-only models of similar sizes. Information regarding the model release can be found at this https URL .
+Multilingual E5 Text Embeddings: A Technical Report
+
+
+This technical report presents the training methodology and evaluation results of the open-source multilingual E5 text…
+arxiv.org
+Matryoshka Embedding Models
+Limit 3: Superb Results at Small Dimensions with Matryoshka Embedding
+
+Matryoshka embedding models can produce useful embeddings of various dimensions, which can heavily speed up downstream tasks like retrieval (e.g. for RAG). 
+
+The embedding model will always produce embeddings of the same fixed size. You can then compute the similarity of complex objects by computing the similarity of the respective embeddings! 
+
+This has an enormous amount of use cases, and serves as the backbone for recommendation systems, retrieval, one-shot or few-shot learning, outlier detection, similarity search, paraphrase detection, clustering, classification, and much more!
+
+As research progressed, new state-of-the-art (text) embedding models started producing embeddings with increasingly higher output dimensions, i.e., every input text is represented using more values. Although this improves performance, it comes at the cost of efficiency and speed. Researchers were therefore inspired to create embedding models whose embeddings could reasonably be shrunk without suffering too much on performance.
+
+You can read more about them in the official blog post on Hugging Face:
+
+🪆 Introduction to Matryoshka Embedding Models
+
+
+We're on a journey to advance and democratize artificial intelligence through open source and open science.
+huggingface.co
+Conclusions
+
+So, how do we actually use embedding models? Stay tuned for the next article, where we’ll delve into the technical details and provide code examples. I will equip you with the tools to unlock the secrets of using embeddings and rerankers.
+
+Hope you enjoyed the article. If this story provided value and you wish to show a little support, you could:
+
+Leave your claps for this story
+Highlight the parts that you feel are more relevant, and worth remembering (it will be easier for you to find them later, and for me to write better articles)
+Learn how to start to Build Your Own AI, download This Free eBook
+Follow me on Medium
+Read my latest articles: https://medium.com/@fabio.matricardi
+
