@@ -48,4 +48,6 @@ On the terminal to the right start the Streamlit server with this command:
 streamlit run .\Danube1.8-stChat_API.py
 ```
 
+<img src="https://github.com/fabiomatricardi/Gemma2B-ChatAssistant/blob/main/222conversation-Danube1.8-stChat_API-2024-03-04-15-03-84.gif" width=900>
+
 
