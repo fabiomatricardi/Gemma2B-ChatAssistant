@@ -1,3 +1,5 @@
+<img src="https://github.com/fabiomatricardi/Gemma2B-ChatAssistant/blob/main/fiveSkillsChatbot.png" width=900>
+
 # Gemma2B-ChatAssistant
 Maybe Gemma-2B-IT is the smallest and best chat friend you can have.
 
